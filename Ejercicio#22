@@ -1,0 +1,19 @@
+Algoritmo Suma_par_producto
+	Definir num, sec,cont,prod,x Como Real
+	sec = 0;cont=1; num = 0; prod=1; suma= 0
+	Escribir  "Ingrese la cantidad de numeros que tendra la secuencia:"
+	leer sec
+	Mientras cont <= sec Hacer
+		Escribir " Ingrese su ", cont, "º numero "
+		leer num
+		si num mod 2=0 Entonces
+			suma = suma + num
+		Fin Si
+		Si num mod 5=0 Entonces
+			prod=prod*num
+		Fin Si
+		cont=cont+1
+	Fin Mientras
+	Escribir " Suma de los numeros pares: ",suma;
+	Escribir " Producto de los multiplos de 5 es: ",prod
+FinAlgoritmo
