@@ -1,0 +1,19 @@
+Algoritmo Division_restas
+	Definir n1, n2,resto Como Entero
+	Escribir "Introduce el dividendo"
+	Leer n1
+	Escribir "Introduce el divisor"
+	Leer n2
+	Si n2=0 Entonces
+		Escribir "Error."
+	SiNo
+		cociente=0
+		resto=n1
+		Mientras resto>=n2 Hacer
+			resto=resto-n2 
+			cociente=cociente+1
+		Fin Mientras
+	FinSi
+	Escribir "El cociente es: ", cociente
+	Escribir "El resto es: ",resto
+FinAlgoritmo
