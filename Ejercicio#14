@@ -1,0 +1,15 @@
+Algoritmo media
+	definir med,sum,contador,num como real
+	sum=0; cont=0; med= 0
+	escribir "introduce un número"
+	Leer num
+	mientras num>0 hacer
+		cont=cont+1
+		sum=sum+num
+		Escribir "Ingrese numero"
+		Leer num
+		med=sum/cont
+	finmientras
+	escribir "la suma es: ", sum
+	escribir "la media es: ", med
+FinAlgoritmo
