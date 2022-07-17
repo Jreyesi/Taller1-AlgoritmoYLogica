@@ -1,0 +1,14 @@
+Algoritmo sucesion_30
+		Definir n1,n1tt,n2,n2tt,x Como Real
+		n1=0; n2=0; n1tt=0; n2tt=1; c=1
+		Mientras x<30 Hacer
+			Escribir 'Ingrese el número   #',c
+			Leer n1
+			n1tt=n1tt+n1
+			n2tt=n1*n2tt
+			c=c+1
+			x=x+1
+		FinMientras
+		Escribir 'el resultado de la suma es: ',n1tt
+		Escribir 'el resultado del producto:  ',n2tt
+FinAlgoritmo
