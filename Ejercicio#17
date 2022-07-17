@@ -1,0 +1,11 @@
+Algoritmo sum_30p
+	Definir sump,n Como Entero
+	Para i<-1 Hasta 30 Con Paso 1 Hacer
+		Escribir "ingrese el número ", i, " del total"
+		leer n
+		Si nu mod 2=0 Entonces
+			sump=sump+n
+		Fin Si
+	Fin Para
+	Escribir "la suma de los 30 numeros es: ",sump
+FinAlgoritmo
