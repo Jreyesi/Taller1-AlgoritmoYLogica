@@ -1,0 +1,11 @@
+Algoritmo Tabla_mult
+	Definir n Como Entero
+	Escribir "Ingrese un numero entero"
+	Leer n
+	X=1
+	Mientras X<=10 Hacer
+		Mul=X*n
+		Escribir "",n,"x",X,"=",Mul 
+		x=x+1
+	FinMientras
+FinAlgoritmo
