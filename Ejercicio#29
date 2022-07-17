@@ -1,0 +1,23 @@
+Algoritmo Numero_en_Vect
+	Definir vect1, num, num2, x, cont como entero
+	num = 0; num2=0
+	Escribir "Escriba la cantidad de elementos en el vector" 
+	Leer num
+    Dimension vect1[num]
+	Para x =1 Hasta num Con Paso 1 Hacer	
+		Escribir " Ingrese el #",x
+        Leer vect1(x)
+	Fin Para
+	Escribir "Ingrese el numero que desea encontrar: "
+	leer num2 
+	cont = 0
+	Para x =1 Hasta num Con Paso 1 Hacer	
+		si num2 == vect1(x) Entonces
+			Escribir " El numero ", num2, " está almacenado en la posicion #", x 
+			cont=1
+		FinSi
+	Fin Para
+	si cont=0 Entonces
+		Escribir " El numero ingresado ", num2, " no está almacenado en el arreglo"
+	FinSi
+FinAlgoritmo
