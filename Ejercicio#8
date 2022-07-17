@@ -1,0 +1,12 @@
+Algoritmo Producto_sumas
+	Definir n1,n2,x,pr Como Entero
+	Escribir "Ingrese dos numeros"
+	Leer n1,n2
+	producto=0
+	x=1
+	Mientras x<=n1 Hacer
+		pr=pr+n2
+		x=x+1
+	Fin Mientras
+	Escribir "El producto de los dos numeros es: ",pr	
+FinAlgoritmo
