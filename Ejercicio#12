@@ -1,0 +1,15 @@
+Algoritmo binario_num
+	Definir n,x,bi Como Real
+	Escribir "Ingrese un número"
+	Leer n
+	x=1
+	Escribir "El número ",n," convertido a binario es:"
+	Mientras n>=1 Hacer
+		Si n mod 2=1
+			bi=bi+x
+		FinSi
+		n=trunc(n/2)
+		x=x*10
+	FinMientras
+	Escribir bi
+FinAlgoritmo
