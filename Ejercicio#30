@@ -1,0 +1,18 @@
+Algoritmo Factorial_vec
+	Definir i,i1,fac,n Como Real
+	dimension n[20]
+	para i=1 hasta 20 con paso 1 hacer
+		escribir "introduce un número"
+		leer n[i]
+	fin para
+	para i=1 hasta 20 con paso 1 hacer
+		fac=1
+		Para i1=2 Hasta n[i] Hacer
+			fac=fac*i1 
+		finpara
+		n[i]=fac
+	fin para
+	para i <- 1 hasta 20 con paso 1 hacer
+		Escribir "El factorial de esta posicion del vector es: ", n[i]
+	fin para
+FinAlgoritmo
