@@ -1,0 +1,20 @@
+Algoritmo vector20_num
+	Definir i,n,may, pos como entero
+	Dimensión n[20]
+	Para i=1 hasta 20 hacer
+		Escribir "Ingrese el #",i ": "
+		Leer n[i]
+	FinPara
+	Para i=1 hasta 20 hacer
+		Si i=1 entonces
+			may=n[i]
+		Sino 
+			Si n[i]>may entonces
+				May=n[i]
+				Pos=i 
+			FinSi
+		FinSi
+	FinPara
+	Escribir "El número mayor es: ",may
+	Escribir "Se encuentra en la posición: ",pos
+FinAlgoritmo
