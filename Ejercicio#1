@@ -1,0 +1,10 @@
+Algoritmo par_impar
+	Definir n Como Entero
+	Escribir "Digite un numero"
+	Leer n
+	Si n mod 2 = 0 Entonces
+		Escribir "El numero ingresado es par"
+	SiNo
+		Escribir "El numero ingresado no es par"
+	FinSi
+FinAlgoritmo
