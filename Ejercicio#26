@@ -1,0 +1,24 @@
+Algoritmo suma_vector
+	Definir i,pos1, pos2, veca, vecb, vecc,a,b Como Entero
+	Dimension va[15], vb[15], vc[15]
+	pos1 = 1
+	Para x=1 Hasta 15 Con Paso 1 Hacer
+		Escribir  "Ingrese el valor del vector A en la posición: ",  pos1
+		leer va(x)
+		Escribir  "Ingrese el valor del vector B en la posición: ", pos1
+		leer vb(x)
+		pos1=pos1+1
+	Fin Para
+	Para x=1 Hasta 15 Con Paso 1 Hacer
+		vc(x) = va(x) + vb(x)
+		si vc(x)>i Entonces
+			i=vc(x)
+		FinSi
+	Fin Para
+	Para x=1 Hasta 15 Con Paso 1 Hacer
+		pos2=pos2+1
+		Escribir  "La suma de sus vectores es: ", "Vector C [", pos2, "] = ", vc(x)
+	Fin Para
+	Escribir ""
+	Escribir "El numero mayor del vector C es: ",i
+FinAlgoritmo
