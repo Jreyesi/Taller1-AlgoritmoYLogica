@@ -1,0 +1,13 @@
+Algoritmo sum_par
+	Definir n,x,num,sp como Real
+	Escribir "Ingrese la cantidad de numeros de la secuencia: "
+	leer n
+	Para x <- 1 Hasta n Con Paso 1 Hacer
+		Escribir "Ingrese numero ",x, " de la secuencia"
+		Leer num
+		Si num mod 2=0 Entonces
+			sp=sp+num
+		Fin Si
+	Fin Para
+Escribir "La suma de los numeros pares de la secuencia es: ",sp
+FinAlgoritmo
