@@ -1,0 +1,9 @@
+Algoritmo secuencia_neg
+	Definir n1,n2 Como Entero
+	Mientras n1>=0 Hacer
+		n2=n2+n1
+		Escribir 'Ingrese el número'
+		Leer n1
+	FinMientras
+	Escribir 'La suma total es: ',n2
+FinAlgoritmo
