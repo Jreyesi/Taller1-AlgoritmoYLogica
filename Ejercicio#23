@@ -1,0 +1,14 @@
+Algoritmo secuencia_pares
+	Definir n,x,num,may Como Entero
+	Escribir "Ingrese la cantidad de numeros de la secuencia"
+	leer n
+	Para x=1 Hasta n Con Paso 1 Hacer
+		Escribir "Ingrese numero ",x, " de la secuencia"
+		Leer num
+		Si num mod 2=0 Entonces
+			may=may+1
+			may=num
+		FinSi
+	FinPara
+	Escribir "El mayor de los pares ingresados en la serie es: ",may
+FinAlgoritmo
