@@ -1,0 +1,16 @@
+Algoritmo primo
+	Definir n Como Entero
+	Definir encontrado Como Logico
+	Escribir ("introduce un número");
+	LEER n
+	encontrado=falso
+	cont=2
+	Mientras (cont<= n-1)&(n%cont<>0) Hacer
+		contr=cont+1
+	FinMientras
+	Si (cont<=n-1) Entonces
+		Escribir "El número no es primo"
+	Sino
+		Escribir "El número es primo"
+	FinSi
+FinAlgoritmo
