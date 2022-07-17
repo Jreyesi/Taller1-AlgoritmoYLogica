@@ -1,0 +1,15 @@
+Algoritmo Sum_fact
+   Definir num, x, cont, suma, n Como real
+    x = 1; cont = 1
+  Mientras x <= 30 Hacer
+	 Escribir " Ingrese el #", x
+	Leer num;
+	para n=1 Hasta  num con paso 1 Hacer
+		cont=cont*n;
+	FinPara
+	suma=suma+cont
+	x=x+1;
+	cont=1;
+  Fin Mientras
+  Escribir "la suma de los factoriales es: ",suma
+FinAlgoritmo
