@@ -1,0 +1,19 @@
+Algoritmo Numero_mayor
+	definir n,x,mayor,total Como Entero
+	Escribir "Ingrese el total de numeros"
+	Leer total
+	x=1
+	Mientras x<=total Hacer
+		Escribir "Ingresa un numero"
+		Leer n
+		Si x=1 Entonces
+			mayor = n
+		SiNo
+			Si n>mayor Entonces
+				mayor= n
+			FinSi
+		FinSi
+		x=x+1
+	FinMientras
+	Escribir "El numero mayor es: ",n
+FinAlgoritmo
