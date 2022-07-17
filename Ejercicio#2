@@ -1,0 +1,9 @@
+Algoritmo Multiplicacion
+	Definir n1, n2 Como Entero
+	Escribir "Digite el primer numero"
+	Leer n1
+	Escribir "Digite el segundo numero"
+	Leer n2
+	producto=(n1*n2)
+	Escribir "El producto de los dos numeros es: ", producto
+FinAlgoritmo
