@@ -1,0 +1,27 @@
+Algoritmo mult_may_men
+	definir n,i,num,may,men,in Como entero
+	n= 0; i=0; num=0; men=0; in=1
+	Escribir "Ingresa un numero"
+	leer n
+	Mientras i<n Hacer
+		i=i+1
+		Escribir "Introduce un numero",i
+		leer num 
+		si in=i Entonces
+			may=num 
+			men=num
+		FinSi
+		si num mod 5=0 Entonces
+			si num>may Entonces
+				may= num
+			FinSi
+		FinSi
+		si num mod 3=0 Entonces
+			si num<men Entonces
+				men=num
+			FinSi
+		FinSi
+	FinMientras
+	Escribir "El mayor de los multiplos de 5 es: ",may
+	Escribir "El menor de los multiplos de 3 es: ",men
+FinAlgoritmo
