@@ -1,0 +1,68 @@
+Algoritmo Bin_Oc_Hex
+	Definir num,mo, x, conv Como Real
+	Definir base,q Como Caracter
+	Escribir "ingrese el numero a transformar"
+	Leer num
+	Escribir "escoja la base a la que desea convertir el nunero (B=binario/O=octal/H=hexadecimal)"
+	Leer base
+	Segun base Hacer
+		Caso "B":
+			si num=0 Entonces
+				conv=0
+			SiNo
+				mientras num>0 Hacer
+					mo= num%2
+					num=trunc(num/2)
+					si mo>0 Entonces
+						conv=1
+					SiNo
+						conv=0
+					FinSi
+					Escribir "bit ",x,":  ",conv
+					x=x+1
+				FinMientras
+				
+			FinSi
+		Caso "O":
+			si num=0 Entonces
+				conv=0
+			SiNo
+				Repetir
+					mo= num%8
+					conv=conv+10^x*mo
+					x=x+1
+					num=trunc(num/8)
+			    Hasta Que num<8
+				b=conv+10^x*num
+				Escribir "Su transformacion al sistema Octal es: ",b
+			FinSi
+		caso "H":	
+			x=1
+			q=""
+			Mientras x>0 Hacer
+				x=trunc(num/16)
+				Segun num%16 hacer
+					Caso 10:
+						
+						q="A"+q
+					Caso 11:
+						
+						q="B"+q
+					Caso 12:
+						
+						q="C"+q
+				    caso 13:
+						
+						q="D"+q
+					Caso 14:
+						q="E"+q
+					Caso 15:
+						q="F"+q
+					De Otro Modo:
+						q=ConvertirATexto(num%16)+q
+				FinSegun
+				num=x
+				Escribir "Su transformacion al sistema Hexadecimal es: ",q
+			FinMientras
+	FinSegun
+FinAlgoritmo
