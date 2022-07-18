@@ -1,0 +1,23 @@
+Algoritmo Palindromo
+	Definir pal,reves como cadena
+	Definir x,n,q Como Entero
+	Escribir "Ingrese la palabra o frase a determinar: "
+	Leer pal
+	para n=1 Hasta Longitud(pal) Con Paso 1 Hacer
+		si Subcadena(pal,n,n)<>" " Entonces
+			alm=alm+Subcadena(pal,n,n);
+		FinSi
+	FinPara
+	Para n=Longitud(alm) Hasta 1 Con Paso -1 Hacer
+		si Subcadena(alm,n,n)<>" " Entonces
+			reves=reves+Subcadena(alm,n,n)
+		SiNo
+			reves=reves+Subcadena(pal,n,n)
+		FinSi
+	FinPara
+	si alm=reves Entonces
+		Escribir "El arreglo ingresado ´",pal,"´, es un palindromo"
+	SiNo
+		Escribir  "El arreglo ingresado ´",pal,"´, no es un palindromo"
+	FinSi
+FinAlgoritmo
