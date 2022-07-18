@@ -1,0 +1,13 @@
+Algoritmo Num_palabras
+	Definir parf como cadena
+	Definir sep,x,fi Como entero
+	Escribir "Ingrese un parrafo";
+	Leer parf;
+	fi=Longitud(parf);
+	para x=0 Hasta fi-1 Con Paso 1 Hacer
+		si Subcadena(parf,x,x)==" " Entonces
+			sep=sep+1;
+		FinSi
+	FinPara
+	Escribir "La cantidad de palabras es: ",sep+1;
+FinAlgoritmo
