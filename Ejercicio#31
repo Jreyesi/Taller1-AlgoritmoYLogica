@@ -1,0 +1,22 @@
+Algoritmo orden_20_num
+	Definir num,x,n Como real
+	Dimension vect[20];
+	Para x=1 Hasta 20 con paso 1 Hacer
+		Escribir "Ingrese el #",x
+		Leer vect[x];
+		Para a=1 Hasta x-1 Con Paso 1 Hacer				
+			Para b =a+1 Hasta x Con Paso 1 Hacer				
+				Si vect(a)>vect(b) Entonces
+					temp=vect(a)
+					vect(a)=vect(b)
+					vect(b)=temp
+				FinSi				
+			FinPara
+		FinPara				
+	FinPara
+	Escribir "Los datos ingresados fueron almacenados."
+	Escribir "Los numeros ingresados se muestran a continuacion en orden:"
+	Para x=1 Hasta 20 Con Paso 1 Hacer	
+		Escribir vect[x];
+	FinPara
+FinAlgoritmo
