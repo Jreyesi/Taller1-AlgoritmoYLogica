@@ -1,0 +1,25 @@
+Algoritmo Secuencia
+	Definir fr,sec como cadena
+	Definir num,n Como Entero
+	Escribir "Ingrese el numero de secuencias para almacenar: "
+	Leer num
+	x=num
+	Dimension vec[num];
+	para num=1 Hasta x Con Paso 1 Hacer
+		Escribir"ingrese la secuencia #",num
+		Leer sec
+		vec[num]=sec
+	FinPara
+	Escribir "Ingrese la secuencia que desea encontrar:"
+	Leer fr
+	para num=1 Hasta x Con Paso 1 Hacer
+		si vec[num]=fr
+			Escribir "La secuencia ingresada se encuentra dentro de las almacenadas"
+			n=n+1
+		SiNo
+			si num=x y n=0 Entonces
+				Escribir "La secuencia ingresada no se encuentra dentro de las almacenadas"
+			FinSi
+		FinSi
+	FinPara
+FinAlgoritmo
