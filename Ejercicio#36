@@ -1,0 +1,22 @@
+Algoritmo suma_par_vector
+		Definir primp,num,n,may Como Real
+		Dimension vec[20]
+		para x=1 Hasta 20 Con Paso 1 Hacer
+			Escribir  "Ingrese el #" ,x 
+			Leer vec[x]
+			si x%2=0 Entonces
+				sum=sum+vec[x]
+			FinSi
+			si x%2<>0 Entonces
+				si n<1 Entonces
+					may=vec[x]
+					n=n+1
+				FinSi
+				si vec[x]>may Entonces
+					may=vec[x]
+				FinSi
+			FinSi
+		FinPara
+		Escribir  "La suma de los números en posición par es: ",sum
+		Escribir "El numero mayor de las posiciones impares es: ",may
+FinAlgoritmo
