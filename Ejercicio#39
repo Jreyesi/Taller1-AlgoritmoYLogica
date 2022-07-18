@@ -1,0 +1,27 @@
+Algoritmo Vector_Primo
+	Definir num,pri,x,a,n Como Real
+	a=2
+	Imprimir "Ingrese el numero de elementos que tendrá el vector"
+	Leer x
+	b=x
+	Dimension vec[x]
+	para x=1 Hasta b Con Paso 1 Hacer
+		Imprimir "Ingrese un numero: "
+		Leer num
+		vec[x]=num
+		Mientras a<num Hacer
+			pri=(num)%a
+			si pri=0 Entonces
+				n=n+1
+			FinSi
+			a=a+1
+		FinMientras
+		a=2;
+		si n=0 Entonces
+			Escribir  "El numero ",num," es primo";
+		SiNo
+			Escribir "El numero ",num, " no es primo";
+		FinSi
+		n=0
+	FinPara	
+FinAlgoritmo
